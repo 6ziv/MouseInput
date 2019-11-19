@@ -1,0 +1,1 @@
+请在打包安装程序前添加config.ini文件，firstrun文件和generated.dct文件（都是空白的就好…）
