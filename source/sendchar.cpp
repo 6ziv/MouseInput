@@ -1,4 +1,5 @@
 #include "sendchar.h"
+#include <Windows.h>
 void SendChar::SendChar(wchar_t c){
     KEYBDINPUT ki;
     INPUT input;
@@ -42,4 +43,8 @@ void SendChar::SendVK(unsigned char c){
     input.type = INPUT_KEYBOARD;
     input.ki = ki;
     SendInput(1, &input, sizeof(INPUT));
+}
+void SendChar::SendStr(const std::wstring& str){
+    for(auto ch : str)
+        SendChar(ch);
 }

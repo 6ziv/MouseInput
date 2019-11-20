@@ -1,17 +1,12 @@
 #ifndef PUSHBUTTON_H
 #define PUSHBUTTON_H
 #include <QPushButton>
-class MainWindow;
-class PushButton : public QPushButton
+class Button : public QPushButton
 {
     Q_OBJECT
-public:
-    PushButton(MainWindow *,int,int);
 protected:
     void enterEvent(QEvent *);
-private:
-    int X;int Y;
-    MainWindow *p;
+signals:
+    void mouseenter();
 };
-
 #endif // PUSHBUTTON_H

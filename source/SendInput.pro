@@ -16,21 +16,31 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    buttombar.cpp \
+    button.cpp \
+    catpanel.cpp \
+    charpanel.cpp \
     charset.cpp \
+    charsetselector.cpp \
+    cwindow.cpp \
     dictionary.cpp \
     dictionaryselector.cpp \
     main.cpp \
     mainwindow.cpp \
-    pushbutton.cpp \
     sendchar.cpp
 
 HEADERS += \
+    bottombar.h \
+    button.h \
+    catpanel.h \
     cchar.h \
+    charpanel.h \
     charset.h \
+    charsetselector.h \
+    cwindow.h \
     dictionary.h \
     dictionaryselector.h \
     mainwindow.h \
-    pushbutton.h \
     sendchar.h
 
 # Default rules for deployment.

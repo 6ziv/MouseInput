@@ -3,15 +3,15 @@
 #include <vector>
 #include <string>
 #include <cchar.h>
-class charset
+class Charset
 {
 public:
     bool open(std::wstring filename);
     void openDefault();
-    size_t CountCatalogs();
-    const std::wstring& GetCatalogTag(size_t catalog);
-    const std::wstring& GetCatalogDescription(size_t catalog);
-    const std::vector<wchar_t>& GetCatalog(size_t catalog);
+    size_t CountCatalogs()const;
+    const std::wstring& GetCatalogTag(size_t catalog)const;
+    const std::wstring& GetCatalogDescription(size_t catalog)const;
+    const std::vector<wchar_t>& GetCatalog(size_t catalog)const;
 
 private:
     std::vector<std::pair<std::pair<std::wstring,std::wstring>,size_t>> Cats;
