@@ -1,4 +1,4 @@
-## 鼠标输入法 v0.9
+## 鼠标输入法
 
 基于Qt制作的一款鼠标输入法。
 
@@ -6,9 +6,10 @@
 #### 使用方法
 
 下载并运行安装程序，根据指引进行操作。
-
-[MouseInput.Setup.x64.exe](https://github.com/6ziv/MouseInput/releases/download/v0.9/MouseInput.setup.x64.exe)
-
+v0.9.1
+[MouseInput.Setup.x64.exe](https://github.com/6ziv/MouseInput/releases/download/v0.9.1/MouseInput.setup.x64.exe)
+v0.9.2-beta
+[MouseInput.beta.Setup.x64.exe](https://github.com/6ziv/MouseInput/releases/download/v0.9.2-beta/MouseInput.beta.setup.x64.exe)
 #### 程序截图
 
 ![图1][img1]
