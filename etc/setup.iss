@@ -36,7 +36,7 @@ Source: "E:\release\MouseInput.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "E:\release\firstrun"; DestDir: "{app}"; Flags: ignoreversion; Permissions: users-modify
 Source: "E:\release\settings.ini"; DestDir: "{app}"; Flags: ignoreversion; Permissions: users-modify
 Source: "E:\release\charset.cst"; DestDir: "{app}"; Flags: ignoreversion
-Source: "E:\release\generated.dct"; DestDir: "{app}"; Flags: ignoreversion; Permissions: users-modify
+Source: "E:\release\dictionary.dct"; DestDir: "{app}"; Flags: ignoreversion; Permissions: users-modify
 Source: "E:\release\D3Dcompiler_47.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "E:\release\libEGL.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "E:\release\libGLESV2.dll"; DestDir: "{app}"; Flags: ignoreversion
@@ -57,6 +57,7 @@ Source: "E:\release\vc_redist.x64.exe"; Flags: dontcopy
 
 [INI]
 Filename: "{app}\settings.ini"; Section: "General"; Key: "charset"; String: "{code:ReplaceSlash}/charset.cst";Flags: uninsdeletesection;
+Filename: "{app}\settings.ini"; Section: "General"; Key: "dictionary"; String: "{code:ReplaceSlash}/dictionary.dct";Flags: uninsdeletesection;
 
 
 [Icons]

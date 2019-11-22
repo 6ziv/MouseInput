@@ -24,7 +24,6 @@ SOURCES += \
     charsetselector.cpp \
     cwindow.cpp \
     dictionary.cpp \
-    dictionaryselector.cpp \
     main.cpp \
     mainwindow.cpp \
     sendchar.cpp
@@ -39,7 +38,6 @@ HEADERS += \
     charsetselector.h \
     cwindow.h \
     dictionary.h \
-    dictionaryselector.h \
     mainwindow.h \
     sendchar.h
 
