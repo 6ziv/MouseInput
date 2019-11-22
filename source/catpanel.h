@@ -14,10 +14,10 @@ public:
 private:
     Button *button[12][12];
     CChar Char[12][12];
-    void SetVK(int x,int y,QString tag,unsigned char VK);
-    void SetChar(int x,int y,QString tag,wchar_t wc);
-    void SetCatalog(int x,int y,QString tag,size_t cid);
-    void SetIntenal(int x,int y,QString tag,size_t cmd);
+    void SetVK(int x,int y,const QString tag,unsigned char VK);
+    void SetChar(int x,int y,const QString tag,wchar_t wc);
+    void SetCatalog(int x,int y,const QString tag,size_t cid);
+    void SetIntenal(int x,int y,const QString tag,size_t cmd);
     MainWindow *main;
     //Do not use signals, as class CChar is not a sub-class of class QObject.
 };

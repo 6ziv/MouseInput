@@ -15,8 +15,8 @@ public:
 private:
     Button *button[8][8];
     CChar Char[8][8];
-    void SetChar(int x,int y,QString tag,wchar_t wc);
-    void SetIntenal(int x,int y,QString tag,size_t cmd);
+    void SetChar(int x,int y,const QString tag,wchar_t wc);
+    void SetIntenal(int x,int y,const QString tag,size_t cmd);
     MainWindow *main;
 
 };

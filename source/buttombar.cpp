@@ -16,6 +16,7 @@ BottomBar::BottomBar(MainWindow* parent)
         });
     }
     this->label=new QLabel(this);
+    this->label->setTextFormat(Qt::TextFormat::PlainText);
     this->label->setGeometry(0,0,665,30);
     this->label->show();
 }
@@ -29,16 +30,17 @@ void BottomBar::loadstrings(const std::vector<std::wstring>& strlist){
         if(total+ws.length()>22)
             break;
         button[i]->setGeometry(30*static_cast<int>(total),0,30*static_cast<int>(ws.length()),30);
-        button[i]->setText(QString::fromStdWString(ws));
+        button[i]->setText(QString::fromStdWString(ws).replace('&',"&&"));
         button[i]->show();
         this->str[i]=ws;
         total+=ws.length();
     }
 }
 void BottomBar::loadlabel(const QString text){
+    QString txt=text;
     for(size_t i=0;i<10;i++){
         this->button[i]->hide();
     }
-    this->label->setText(text);
+    this->label->setText(txt.replace('&',"&&"));
     this->label->show();
 }
