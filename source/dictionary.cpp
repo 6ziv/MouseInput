@@ -2,12 +2,23 @@
 #include <Windows.h>
 #include <codecvt>
 #include <sstream>
+#include "standalone.h"
+bool Dictionary::mopen(){
+    std::wstringstream reader;
+    for(auto str :Standalone::dictionary)
+        reader<<str;
+    return sopen(reader);
+}
 bool Dictionary::open(std::wstring filename){
+    std::wifstream reader(filename);
+    if(!reader.is_open())return false;
+    return sopen(reader);
+}
+bool Dictionary::sopen(std::wistream &reader){
     dict.clear();
     dict2.clear();
-    std::wifstream reader(filename);
+
     reader.imbue(std::locale(std::locale::empty(), new std::codecvt_utf8<wchar_t>));
-    if(!reader.is_open())return false;
     std::wstring line;
     std::getline(reader,line);
     if(line.compare(L"Dictionary")!=0)return false;

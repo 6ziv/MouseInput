@@ -37,6 +37,8 @@ private:
     size_t current_cid;
     bool imagined;
 
+    void DoCmd(size_t cmd);
+
     std::unique_ptr<Dictionary> dictionary;
     void ShowCat(size_t cid,size_t page=0);
     void ShowImagine(wchar_t ch);

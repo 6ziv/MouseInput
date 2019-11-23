@@ -8,6 +8,7 @@ class CharsetSelector
 {
 public:
     CharsetSelector(const std::vector<std::wstring> filenames);
+    CharsetSelector();
     bool open(const std::wstring &filename);
     bool close();
     const Charset* get();

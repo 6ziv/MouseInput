@@ -26,7 +26,8 @@ SOURCES += \
     dictionary.cpp \
     main.cpp \
     mainwindow.cpp \
-    sendchar.cpp
+    sendchar.cpp \
+    standalone.cpp
 
 HEADERS += \
     bottombar.h \
@@ -36,10 +37,12 @@ HEADERS += \
     charpanel.h \
     charset.h \
     charsetselector.h \
+    config.h \
     cwindow.h \
     dictionary.h \
     mainwindow.h \
-    sendchar.h
+    sendchar.h \
+    standalone.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

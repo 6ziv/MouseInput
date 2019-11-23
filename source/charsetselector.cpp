@@ -10,6 +10,17 @@ CharsetSelector::CharsetSelector(const std::vector<std::wstring> filenames)
     }
     current_charset=0;
 }
+CharsetSelector::CharsetSelector()
+{
+    auto charset=std::make_unique<Charset>();
+    charset->openDefault();
+    charsets.push_back(std::move(charset));
+
+    charset=std::make_unique<Charset>();
+    charset->mopen();
+    charsets.push_back(std::move(charset));
+    current_charset=0;
+}
 bool CharsetSelector::open(const std::wstring &filename){
     auto charset=std::make_unique<Charset>();
     if(charset->open(filename)){
