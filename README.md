@@ -6,6 +6,7 @@
 #### 使用方法
 
 下载并运行安装程序，根据指引进行操作。
+<<<<<<< HEAD
 
 目前最新版本为v0.94
 [MouseInput.Setup.x64.v0.9.4.exe](https://github.com/6ziv/MouseInput/releases/download/0.94/MouseInput.setup.x64.v0.9.4.exe)
@@ -14,6 +15,12 @@
 
 [MouseInput.x64.v0.9.4.standalone.exe](https://github.com/6ziv/MouseInput/releases/download/0.94/MouseInput.x64.v0.9.4.standalone.exe)
 
+=======
+* v0.9.1
+[MouseInput.Setup.x64.exe](https://github.com/6ziv/MouseInput/releases/download/v0.9.1/MouseInput.setup.x64.exe)
+* v0.9.2-beta
+[MouseInput.beta.Setup.x64.exe](https://github.com/6ziv/MouseInput/releases/download/v0.9.2-beta/MouseInput.beta.setup.x64.exe)
+>>>>>>> 3e0e499b15e86078c0fbd5e5813aa469b0453e6e
 #### 程序截图
 
 ![图1][img1]
